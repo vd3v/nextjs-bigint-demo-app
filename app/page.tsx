@@ -19,7 +19,7 @@ export default function Home() {
 
   useEffect(() => {
     async function fetchData() {
-      const res = await fetch("/data.json");
+      const res = await fetch("data.json");
       setStringified(await res.clone().text());
       setState(await res.json());
     }
